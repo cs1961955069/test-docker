@@ -13,5 +13,9 @@ jobs:
       uses: docker://centos:7
       with:
         entrypoint: /bin/bash
-        args: "/github/workspace/test.sh"        
+        args: "/github/workspace/test.sh"     
+    - name: test step
+      run: |
+        pwd
+        ls
    

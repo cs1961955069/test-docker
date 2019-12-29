@@ -12,6 +12,6 @@ jobs:
     - name: My first step
       uses: docker://alpine:3.8
       with:
-        entrypoint: /bin/echo
-        args: The pushx event triggered this step.
+        entrypoint: /bin/ls
+        
    

@@ -10,8 +10,8 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: My first step
-      uses: docker://alpine:3.8
+      uses: docker://centos:7
       with:
-        entrypoint: /bin/ls
-        
+        entrypoint: /bin/bash
+        args: "/github/workspace/test.sh"        
    

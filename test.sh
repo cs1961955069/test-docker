@@ -2,4 +2,4 @@
 
 set -e
 
-echo "hello xxx"
+echo "hello xxx" > test.kk

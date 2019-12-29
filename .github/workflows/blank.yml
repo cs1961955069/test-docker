@@ -1,0 +1,17 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: My first step
+      uses: docker://alpine:3.8
+      with:
+        entrypoint: /bin/echo
+        args: The ${{ github.event_name }} event triggered this step.
+   
